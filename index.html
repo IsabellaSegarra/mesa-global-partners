@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Sansita&display=swap');
+    .leaflet-popup-content, .leaflet-tooltip {
+        font-family: 'Sansita', sans-serif;
+        color: #6d0304;
+    }
+    .leaflet-popup-content a {
+        color: #6d0304;
+    }
+</style>
+    
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Sansita&display=swap');
+    .leaflet-popup-content, .leaflet-tooltip {
+        font-family: 'Sansita', sans-serif;
+        color: #6d0304;
+    }
+    .leaflet-popup-content a {
+        color: #6d0304;
+    }
+</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_58fa2d9f09f2d40d6c63afd5ad8fa75c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_58fa2d9f09f2d40d6c63afd5ad8fa75c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_58fa2d9f09f2d40d6c63afd5ad8fa75c = L.map(
+                "map_58fa2d9f09f2d40d6c63afd5ad8fa75c",
+                {
+                    center: [10.0, 20.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3e0577a58853b5000617242d3eba081b = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3e0577a58853b5000617242d3eba081b.addTo(map_58fa2d9f09f2d40d6c63afd5ad8fa75c);
+        
+    
+            var circle_marker_6a319343f906ba8f905218e92dd1c04e = L.circleMarker(
+                [36.89499937, 140.0031364],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6d0304", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_58fa2d9f09f2d40d6c63afd5ad8fa75c);
+        
+    
+        var popup_2bac3bcd5927c7c1b49b0021e4e864c9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c8614082da2f04f0882490939b034022 = $(`<div id="html_c8614082da2f04f0882490939b034022" style="width: 100.0%; height: 100.0%;"><b>Asian Rural Institute</b><br>East Asia<br><a href="https://ari.ac.jp/en/home/" target="_blank">Visit website</a></div>`)[0];
+                popup_2bac3bcd5927c7c1b49b0021e4e864c9.setContent(html_c8614082da2f04f0882490939b034022);
+            
+        
+
+        circle_marker_6a319343f906ba8f905218e92dd1c04e.bindPopup(popup_2bac3bcd5927c7c1b49b0021e4e864c9)
+        ;
+
+        
+    
+    
+            circle_marker_6a319343f906ba8f905218e92dd1c04e.bindTooltip(
+                `<div>
+                     ARI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a7a216baeefb9555fd61e857fe0471b9 = L.circleMarker(
+                [7.779562602, -2.082983542],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6d0304", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_58fa2d9f09f2d40d6c63afd5ad8fa75c);
+        
+    
+        var popup_63a9c985961760a41f5c139b436f81c1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fe0d1b43f425438b254817a7b854b76a = $(`<div id="html_fe0d1b43f425438b254817a7b854b76a" style="width: 100.0%; height: 100.0%;"><b>Grow West Africa</b><br>West Africa<br><a href="https://www.facebook.com/growwestafrica/" target="_blank">Visit website</a></div>`)[0];
+                popup_63a9c985961760a41f5c139b436f81c1.setContent(html_fe0d1b43f425438b254817a7b854b76a);
+            
+        
+
+        circle_marker_a7a216baeefb9555fd61e857fe0471b9.bindPopup(popup_63a9c985961760a41f5c139b436f81c1)
+        ;
+
+        
+    
+    
+            circle_marker_a7a216baeefb9555fd61e857fe0471b9.bindTooltip(
+                `<div>
+                     GWA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_98445c2b8ab88f62e0ee0739ce131fc7 = L.circleMarker(
+                [-1.068036303, 37.17425215],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6d0304", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_58fa2d9f09f2d40d6c63afd5ad8fa75c);
+        
+    
+        var popup_5a3991aef1207ed2a1b04f8eb4b06bfb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6f490eb8415c40d25c213ce7a2e6f9a6 = $(`<div id="html_6f490eb8415c40d25c213ce7a2e6f9a6" style="width: 100.0%; height: 100.0%;"><b>Grow Biointensive Agriculture Center of Kenya</b><br>East Africa<br><a href="https://g-biack.org/" target="_blank">Visit website</a></div>`)[0];
+                popup_5a3991aef1207ed2a1b04f8eb4b06bfb.setContent(html_6f490eb8415c40d25c213ce7a2e6f9a6);
+            
+        
+
+        circle_marker_98445c2b8ab88f62e0ee0739ce131fc7.bindPopup(popup_5a3991aef1207ed2a1b04f8eb4b06bfb)
+        ;
+
+        
+    
+    
+            circle_marker_98445c2b8ab88f62e0ee0739ce131fc7.bindTooltip(
+                `<div>
+                     G-BiACK
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eee1d39e4e8e4d3b5cd2fb41e868e316 = L.circleMarker(
+                [7.863762253, -11.19592659],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6d0304", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_58fa2d9f09f2d40d6c63afd5ad8fa75c);
+        
+    
+        var popup_5a44269ac58faf164cff27824b2a5766 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_08274a52831f346c5d35bb42f7472c23 = $(`<div id="html_08274a52831f346c5d35bb42f7472c23" style="width: 100.0%; height: 100.0%;"><b>Kola Nut Producers</b><br>West Africa<br><a href="https://kolanutproducersassociationsl.com/about-us/" target="_blank">Visit website</a></div>`)[0];
+                popup_5a44269ac58faf164cff27824b2a5766.setContent(html_08274a52831f346c5d35bb42f7472c23);
+            
+        
+
+        circle_marker_eee1d39e4e8e4d3b5cd2fb41e868e316.bindPopup(popup_5a44269ac58faf164cff27824b2a5766)
+        ;
+
+        
+    
+    
+            circle_marker_eee1d39e4e8e4d3b5cd2fb41e868e316.bindTooltip(
+                `<div>
+                     Kola Nut Producers
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cd11d72628612b54d553a0de0faefb07 = L.circleMarker(
+                [6.859109183, 79.90956938],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6d0304", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_58fa2d9f09f2d40d6c63afd5ad8fa75c);
+        
+    
+        var popup_1db5c4c9476f63953a38699606235a4c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c33ca18bdf8a88a1d1580cb31bbe8cd0 = $(`<div id="html_c33ca18bdf8a88a1d1580cb31bbe8cd0" style="width: 100.0%; height: 100.0%;"><b>Lanka Organic Agricultural Movement</b><br>South Asia<br><a href="https://loam.lk/" target="_blank">Visit website</a></div>`)[0];
+                popup_1db5c4c9476f63953a38699606235a4c.setContent(html_c33ca18bdf8a88a1d1580cb31bbe8cd0);
+            
+        
+
+        circle_marker_cd11d72628612b54d553a0de0faefb07.bindPopup(popup_1db5c4c9476f63953a38699606235a4c)
+        ;
+
+        
+    
+    
+            circle_marker_cd11d72628612b54d553a0de0faefb07.bindTooltip(
+                `<div>
+                     LOAM
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8692b0aa92d39b7ea4136739058b2ae1 = L.circleMarker(
+                [11.52925956, 104.9165042],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6d0304", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_58fa2d9f09f2d40d6c63afd5ad8fa75c);
+        
+    
+        var popup_e4f746ee8ef1110d0c700b8394670d8c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_19cdaa3056df41d424edde99751e3277 = $(`<div id="html_19cdaa3056df41d424edde99751e3277" style="width: 100.0%; height: 100.0%;"><b>Youth Star Cambodia Organization</b><br>Southeast Asia<br><a href="https://youthstarcambodia.org/" target="_blank">Visit website</a></div>`)[0];
+                popup_e4f746ee8ef1110d0c700b8394670d8c.setContent(html_19cdaa3056df41d424edde99751e3277);
+            
+        
+
+        circle_marker_8692b0aa92d39b7ea4136739058b2ae1.bindPopup(popup_e4f746ee8ef1110d0c700b8394670d8c)
+        ;
+
+        
+    
+    
+            circle_marker_8692b0aa92d39b7ea4136739058b2ae1.bindTooltip(
+                `<div>
+                     YSC
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c9a63a076e337fdbbc59bd2549a8fc62 = L.circleMarker(
+                [3.538589547, -76.61729753],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6d0304", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_58fa2d9f09f2d40d6c63afd5ad8fa75c);
+        
+    
+        var popup_0f501a910b0b5c7fb77d13b1e17ce2d3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ec06800c79c5a51c360f2923a5835862 = $(`<div id="html_ec06800c79c5a51c360f2923a5835862" style="width: 100.0%; height: 100.0%;"><b>Fundación YūtopiaLab</b><br>Latin America<br><a href="https://www.yutopialab.com/" target="_blank">Visit website</a></div>`)[0];
+                popup_0f501a910b0b5c7fb77d13b1e17ce2d3.setContent(html_ec06800c79c5a51c360f2923a5835862);
+            
+        
+
+        circle_marker_c9a63a076e337fdbbc59bd2549a8fc62.bindPopup(popup_0f501a910b0b5c7fb77d13b1e17ce2d3)
+        ;
+
+        
+    
+    
+            circle_marker_c9a63a076e337fdbbc59bd2549a8fc62.bindTooltip(
+                `<div>
+                     Fundación YūtopiaLab
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
